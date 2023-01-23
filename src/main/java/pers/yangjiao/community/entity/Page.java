@@ -67,10 +67,8 @@ public class Page {
      */
     public int getTotal() {
         if (rows % limit == 0) {
-            System.out.println(rows/limit);
             return rows / limit;
         } else {
-            System.out.println(rows/limit+1);
             return rows / limit + 1;
         }
     }

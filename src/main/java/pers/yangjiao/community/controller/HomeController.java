@@ -30,7 +30,6 @@ public class HomeController {
 
         List<DiscussPost> discussPostList = discussPostService.findDiscussPosts(0, page.getOffset(), page.getLimit());
         List<Map<String, Object>> discussPosts = new ArrayList<>();
-        System.out.println(discussPostList);
         if (discussPostList != null) {
             for (DiscussPost post : discussPostList) {
                 HashMap<String, Object> map = new HashMap<>();
