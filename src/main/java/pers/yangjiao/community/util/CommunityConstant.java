@@ -7,4 +7,8 @@ public interface CommunityConstant {
     int ACTIVATION_REPEAT = 1;
     // 激活失败
     int ACTIVATION_FAILURE = 2;
+    // 默认状态下的登陆凭证超时时间（12小时）
+    int DEFAULT_EXPIRED_SECONDS = 60 * 60 * 12;
+    // 勾选记住我状态下的登陆凭证超时时间（30天）
+    int REMEMBERME_EXPIRED_SECONDS = 60 * 60 * 24 * 30;
 }
