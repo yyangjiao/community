@@ -20,6 +20,7 @@ public class MailClient {
     @Value("${spring.mail.username}")
     private String from;
 
+
     public void sendMail(String to, String subject, String content) {
         try {
             MimeMessage message = mailSender.createMimeMessage();
@@ -32,6 +33,5 @@ public class MailClient {
         } catch (MessagingException e) {
             logger.error("发送邮件失败: " + e.getMessage());
         }
-
     }
 }

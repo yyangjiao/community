@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.multipart.MultipartFile;
 import pers.yangjiao.community.LoginRequired;
+import pers.yangjiao.community.entity.DiscussPost;
 import pers.yangjiao.community.entity.User;
 import pers.yangjiao.community.service.UserService;
 import pers.yangjiao.community.util.CommunityUtil;
@@ -105,6 +106,7 @@ public class UserController {
         }
     }
 
+    @LoginRequired
     @RequestMapping(path = "/modify", method = RequestMethod.POST)
     public String modifyPassword(String oldPassword, String newPassword, Model model) {
         if (StringUtils.isBlank(oldPassword) || StringUtils.isBlank(newPassword)) {
