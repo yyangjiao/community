@@ -11,4 +11,7 @@ public interface CommunityConstant {
     int DEFAULT_EXPIRED_SECONDS = 60 * 60 * 12;
     // 勾选记住我状态下的登陆凭证超时时间（30天）
     int REMEMBERME_EXPIRED_SECONDS = 60 * 60 * 24 * 30;
+    // 实体类型
+    int ENTITY_TYPE_POST = 1;
+    int ENTITY_TYPE_COMMENT = 2;
 }
